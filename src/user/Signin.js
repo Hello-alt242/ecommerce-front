@@ -4,9 +4,16 @@ import Layout from '../core/Layout'
 import {signin, authenticate, isAuthenticated } from '../auth'
 
 const Signin = () => {
+    // const [values, setValues] = useState({
+    //     email: 'ryan@gmail.com',
+    //     password: 'rrrrrr1',
+    //     error: '',
+    //     loading: false,
+    //     redirectToReferrer: false
+    // })
     const [values, setValues] = useState({
-        email: 'ryan@gmail.com',
-        password: 'rrrrrr1',
+        email: '',
+        password: '',
         error: '',
         loading: false,
         redirectToReferrer: false

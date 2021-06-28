@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Card, CardText, CardTitle, Progress } from 'reactstrap';
 import Layout from '../core/Layout'
 import {isAuthenticated} from '../auth'
 import {Link} from 'react-router-dom'
@@ -10,9 +9,7 @@ const Dashboard = ({
     title,
     subtitle,
     number,
-    color,
-    progress: { value, label },
-    ...restProps
+    color
 }) => {
     const [history, setHistory] = useState([])
 
@@ -131,7 +128,6 @@ const Dashboard = ({
                     <p>Role: '{role === 1 ? 'Admin' : 'Registered User'}'</p>
                 </div>
             </div>
-            hello
         </Layout>
     )
 }
