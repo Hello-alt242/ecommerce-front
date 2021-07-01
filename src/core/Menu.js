@@ -14,8 +14,8 @@ const isActive = (history, path) => {
 
 const Menu = ({ history }) => (
     <div>
-        <ul className="nav nav-tabs" style={{marginLeft:"1000px"}}>
-            {/* <li className="nav-item">
+        <ul className="nav nav-tabs bg-primary">
+            <li className="nav-item">
                 <Link 
                     className="nav-link" 
                     style={isActive(history, '/')} 
@@ -46,7 +46,7 @@ const Menu = ({ history }) => (
                         <small className="cart-badge">{itemTotal()}</small>
                     </sup>
                 </Link>
-            </li> */}
+            </li>
 
             {isAuthenticated() && isAuthenticated().user.role === 0 && (
                 <li className="nav-item">

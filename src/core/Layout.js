@@ -1,7 +1,6 @@
 import React from 'react'
 import Menu from "./Menu"
 import "../styles.css"
-import Navbar from '../Components/Navbar';
 
 const Layout = ({
         title = 'Title',
@@ -10,8 +9,7 @@ const Layout = ({
         children
 }) => (
     <div>
-    {/* <Menu /> */}
-        <Navbar />
+        <Menu />
         <div className="jumbotron"> 
             <h2>{title}</h2>
             <p className="lead">{description}</p>
