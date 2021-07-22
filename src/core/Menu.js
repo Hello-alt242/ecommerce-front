@@ -25,7 +25,7 @@ const Menu = ({ history }) => (
                 </Link>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
                 <Link 
                     className="nav-link" 
                     style={isActive(history, '/shop')} 
@@ -33,7 +33,7 @@ const Menu = ({ history }) => (
                 >
                     Shop
                 </Link>
-            </li>
+            </li> */}
 
             <li className="nav-item">
                 <Link 
